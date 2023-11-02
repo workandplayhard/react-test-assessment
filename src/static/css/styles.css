@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Galano Grotesque", sans-serif !important;
+  color: var(--text-primary);
+}
+
+#style-5::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(254, 254, 254, 0.3);
+  background-color: #f2f5f8;
+  border-radius: 100px;
+}
+
+#style-5::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f2f5f8;
+  border-radius: 100px;
+}
+
+#style-5::-webkit-scrollbar-thumb {
+  background: #8d98af;
+  border-radius: 100px;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+/*----======= Filter Toolbar Start ========--------*/
+
+.filterResponsiveCus .filtstatus,
+.filterResponsiveCus .filtstatus span {
+  width: auto;
+}
+
+.headingTbL {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  padding: 20px;
+  z-index: 9;
+}
+
+.filtstatus {
+  width: 80px;
+}
+
+.filtstatus span {
+  width: 80px;
+}
+
+.filtstatus .sortingShow {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+}
+
+.filterMain .dropdown .btn {
+  padding: 10px 12px;
+  text-align: left;
+  display: inline-flex;
+  background: transparent;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  width: 100% !important;
+  border: 1px solid var(--text-primary);
+  text-transform: capitalize;
+  outline: none !important;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2f3133;
+  line-height: 24px;
+  margin: 0 15px;
+}
+
+.filterMain .btn-primary:not(:disabled):not(.disabled).active,
+.filterMain .btn-primary:not(:disabled):not(.disabled):active,
+.filterMain .show > .btn-primary.dropdown-toggle {
+  color: var(--text-primary) !important;
+  background-color: transparent !important;
+  border-color: var(--text-primary) !important;
+}
+
+.filterMain .btn-primary:not(:disabled):not(.disabled).active:focus,
+.filterMain .btn-primary:not(:disabled):not(.disabled):active:focus,
+.filterMain .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+  color: var(--text-primary) !important;
+}
+
+.filterMain .btn-primary.focus,
+.filterMain .btn-primary:focus {
+  color: var(--text-primary);
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0);
+}
+
+.filterMain form .dropdown.show .dropdown-toggle img {
+  transform: rotate(180deg);
+}
+
+.filterMain .dropdown.show button img {
+  transform: rotate(180deg);
+}
+
+.filterMain .dropdown button img {
+  margin: 0 0 0 10px;
+}
+
+.filterMain .customDropdown .dropdown-item:hover {
+  color: #000 !important;
+  font-size: 16px;
+}
+
+.filterMain .customDropdown {
+  text-align: center !important;
+  right: auto !important;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 250px;
+  padding: 10px 10px !important;
+  min-width: 90px !important;
+  padding: 0;
+  top: 5px !important;
+  left: 0px !important;
+}
+
+.filterMain .dropdown-item {
+  padding: 10px 10px !important;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #767676;
+  border: none;
+}
+
+.filterMain .dropdown-item:hover {
+  color: #767676 !important;
+}
+
+.filterMain .dropdown-menu:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid transparent;
+  top: -17px;
+  right: 17px;
+  transform: rotate(180deg);
+}
+
+.search-container {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+.search-container .dropdown .btn {
+  width: auto !important;
+}
+
+.search-container .dropdown.show button img {
+  margin: 0 0 0 10px;
+  transform: rotate(180deg);
+}
+
+.search-container .respoCusBottom {
+  display: flex;
+}
+
+.searchFilter {
+  margin: 0 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.headingTbL .searchFilter input {
+  background: transparent;
+  border: 1px solid var(--text-primary);
+  border-radius: 10px;
+  padding: 10px 30px 10px 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+  margin-left: 15px;
+  outline: none;
+  width: 210px;
+}
+
+.headingTbL .searchFilter i {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+/*----======= Filter Toolbar End ========--------*/
+/*----======= Table Css Start ========--------*/
+.table-container {
+  position: relative;
+  top: 94px;
+}
+
+.table-container .table-responsive {
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.table-container .table-responsive table {
+  border-bottom: 0 !important;
+  margin-bottom: 0;
+}
+
+.table-container .table-responsive table thead th {
+  vertical-align: bottom;
+  border-bottom: 0 solid #dee2e6;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.table-container .table-responsive table thead th,
+table td {
+  vertical-align: middle !important;
+  border: none !important;
+}
+
+.table-container .table-responsive table th,
+td {
+  padding: 14px 12px;
+  vertical-align: middle;
+  border-top: 0 solid #dee2e6;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 24px;
+  /* text-transform: capitalize; */
+}
+.react-datepicker__input-container .react-datepicker__calendar-icon {
+  position: absolute;
+  padding: 0.5rem;
+  box-sizing: content-box;
+  top: 5px;
+}
+.headingTbL .dateFilter {
+  background: transparent;
+  border: 1px solid var(--text-primary);
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+  outline: none;
+  width: 210px;
+}
+/*----======= Table Css Start ========--------*/

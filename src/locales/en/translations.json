@@ -1,0 +1,20 @@
+{
+  "TableHeaders": {
+    "id": "ID",
+    "customer_name": "Customer Name",
+    "business_date": "Business Date",
+    "shift": "Shift",
+    "area": "Area",
+    "status": "Status"
+  },
+  "TableBody": {
+    "no_records_found": "No reservation records found"
+  },
+  "Search": {
+    "label": "Search",
+    "search_placeholder": "Enter keyword"
+  },
+  "DatePicker": {
+    "placeholder": "Select date"
+  }
+}
